@@ -1,0 +1,83 @@
+body
+  margin: 0
+
+.hide
+  display: none
+
+.mainbar
+  position: relative
+  display: flex
+  width: auto
+  padding: 20px 15px
+  justify-content: space-between
+
+// NAVBAR OVERLAY MENU ---------------
+.overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(0, 0, 0, 0.5)
+.overlay-mainbar
+  background: white
+  position: relative
+  width: auto
+  display: flex
+  justify-content: space-between
+  padding: 30px 25px
+.mobile-nav
+  position: absolute
+  width: 80%
+  left: 10%
+  top: 100px
+  background: white
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  text-align: center
+  padding: 10px 0
+  p
+    margin: 10px 0
+
+// HERO AREA -------------------
+.hero
+  position: relative
+  display: flex
+  flex-direction: column-reverse
+.hero-image
+  position: relative
+  height: 310px
+  overflow: hidden
+  margin-bottom: 50px
+  .hero-img1
+    position: absolute
+    width: 200%
+    bottom: -45px
+    left: -25%
+  .hero-img2
+    position: absolute
+    left: 0
+    bottom: -6%
+  img
+    width: 100%
+.hero-text
+  text-align: center
+  width: 80%
+  margin: auto
+  h1
+    font-size: 44px
+    margin-bottom: 10px
+    color: hsl(233, 26%, 24%)
+  p
+    color: hsl(233, 8%, 62%)
+.req-button
+  width: 165px
+  height: 45px
+  border-radius: 50px
+  border: 0
+  color: White
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))
+  margin: 20px

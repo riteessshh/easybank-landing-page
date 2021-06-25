@@ -8,6 +8,8 @@
 
   <title>Frontend Mentor | Easybank landing page</title>
 
+  <link rel="stylesheet" href="styles.css">
+
 
   <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,7 +18,7 @@
 </head>
 <body>
 
-<header>
+<header class="hide">
 
   <img class="logo" src="images/logo.svg" alt="Brand Logo">
 
@@ -31,6 +33,28 @@
   <button class="req-button" type="button" name="button">Request Invite</button>
 </header>
 
+<div class="mobile-navbar">
+  <div class="mainbar">
+    <img class="logo" src="images/logo.svg" alt="Brand Logo">
+    <img class="logo" src="images/icon-hamburger.svg" alt="Menu">
+  </div>
+
+  <div class="overlay hide">
+    <div class="overlay-mainbar">
+      <img class="logo" src="images/logo.svg" alt="Brand Logo">
+      <img class="logo" src="images/icon-close.svg" alt="Menu">
+    </div>
+
+    <nav class="mobile-nav">
+      <p>Home</p>
+      <p>About</p>
+      <p>Contact</p>
+      <p>Blog</p>
+      <p>Careers</p>
+    </nav>
+  </div>
+</div>
+
 
 <section>
   <div class="hero">
@@ -43,8 +67,8 @@
       <button class="req-button" type="button" name="button">Request Invite</button>
     </div>
     <div class="hero-image">
-      <img src="images/bg-intro-desktop.svg" alt="Intro-image">
-      <img src="images/image-mockups.png" alt="mockups-image">
+      <img class="hero-img1"src="images/bg-intro-desktop.svg" alt="Intro-image">
+      <img class="hero-img2"src="images/image-mockups.png" alt="mockups-image">
     </div>
   </div>
 </section>
@@ -92,6 +116,7 @@
 
 
 
+<section class="hide">
   <h2>Latest Articles</h2>
 
   <article class="post">
@@ -125,6 +150,7 @@
     <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta.
     It’s easy to request an invite through the site ...</p>
   </article>
+</section>
 
 
 <footer>
