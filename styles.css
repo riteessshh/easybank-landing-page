@@ -55,6 +55,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 60px;
 }
 
 .hero-image {
@@ -109,11 +110,12 @@ body {
   padding: 50px 40px;
 }
 
-.article h2 {
+h2 {
   font-size: 36px;
   font-weight: 300;
   color: #2d314d;
 }
+
 .article h3 {
   font-size: 22px;
   font-weight: 400;
@@ -124,6 +126,42 @@ body {
   font-size: 15px;
   margin-top: 0;
   padding-bottom: 25px;
+  color: #9698a6;
+}
+
+.art_div {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.post-image {
+  width: 88%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.text-content {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.text-content .by-line {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #9698a6;
+}
+.text-content h4 {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #2d314d;
+}
+.text-content p {
+  font-size: 14px;
   color: #9698a6;
 }
 
