@@ -102,6 +102,7 @@ body {
   color: White;
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   margin: 20px;
+  font-weight: 700;
 }
 
 .features {
@@ -131,7 +132,7 @@ h2 {
 
 .art_div {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 60px;
 }
 
@@ -163,6 +164,35 @@ h2 {
 .text-content p {
   font-size: 14px;
   color: #9698a6;
+}
+
+footer {
+  background-color: #2d314d;
+  color: white;
+  text-align: center;
+  padding: 30px 0 50px;
+}
+footer p {
+  color: #9698a6;
+}
+footer .logo {
+  padding: 20px 0;
+}
+footer .social {
+  padding: 20px 0;
+  width: 50%;
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+}
+footer .social img {
+  cursor: pointer;
+}
+footer nav p {
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
