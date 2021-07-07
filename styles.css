@@ -3,6 +3,10 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+section {
+  z-index: 2;
+}
+
 .hide {
   display: none;
 }
@@ -14,6 +18,12 @@ body {
   padding: 20px 15px;
   justify-content: space-between;
 }
+.mainbar .logo {
+  cursor: pointer;
+}
+.mainbar .menu {
+  cursor: pointer;
+}
 
 .overlay {
   position: fixed;
@@ -24,6 +34,7 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 
 .overlay-mainbar {
@@ -32,23 +43,36 @@ body {
   width: auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 25px;
+  padding: 20px 15px;
+}
+.overlay-mainbar .close {
+  cursor: pointer;
+}
+.overlay-mainbar .logo {
+  cursor: pointer;
 }
 
 .mobile-nav {
   position: absolute;
   width: 80%;
   left: 10%;
-  top: 100px;
+  top: 90px;
   background: white;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .mobile-nav p {
-  margin: 10px 0;
+  margin: 10px auto;
+  display: inline-block;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.mobile-nav p:hover {
+  color: #31d35c;
 }
 
 .hero {
@@ -103,6 +127,11 @@ body {
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   margin: 20px;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.req-button:hover {
+  background-image: linear-gradient(to right, rgba(49, 211, 92, 0.6), rgba(43, 183, 218, 0.6));
 }
 
 .features {
@@ -177,6 +206,7 @@ footer p {
 }
 footer .logo {
   padding: 20px 0;
+  cursor: pointer;
 }
 footer .social {
   padding: 20px 0;
@@ -188,11 +218,20 @@ footer .social {
 footer .social img {
   cursor: pointer;
 }
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
 footer nav p {
+  margin: 10px auto;
+  display: inline-block;
   padding-bottom: 5px;
   cursor: pointer;
   font-weight: 400;
   color: white;
+}
+footer nav p:hover {
+  color: #31d35c;
 }
 
 /*# sourceMappingURL=styles.css.map */
