@@ -5,6 +5,9 @@ body
 section
   z-index: 2
 
+header
+  display: none
+
 .hide
   display: none
 
@@ -136,7 +139,7 @@ h2
   margin-top: 60px
 .post-image
   width: 88%
-  height: 200px
+  height: calc(100vw / 2)
   border-top-left-radius: 5px
   border-top-right-radius: 5px
 .text-content
@@ -157,6 +160,17 @@ h2
   p
     font-size: 14px
     color: hsl(233, 8%, 62%)
+
+.lower
+  .article-image
+    width: 95%
+    height: calc(100vw / 2)
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+  .text-content
+    width: 90%
+    padding-top: 10px
+
 
 footer
   background-color: hsl(233, 26%, 24%)
@@ -179,6 +193,9 @@ footer
   nav
     display: flex
     flex-direction: column
+    div
+      display: flex
+      flex-direction: column
     p
       margin: 10px auto
       display: inline-block
@@ -188,3 +205,107 @@ footer
       color: white
     p:hover
       color: hsl(136, 65%, 51%)
+
+@media (min-width: 990px)
+  .mainbar
+    display: none
+  header
+    position: relative
+    display: flex
+    width: auto
+    margin: auto
+    justify-content: space-between
+    align-items: center
+    padding: 10px 150px
+    background: white
+    z-index: 5
+    .logo
+      width: 150px
+      height: 25px
+    nav
+      display: flex
+      width: 300px
+      margin: auto
+      justify-content: space-between
+      p
+        margin: 0
+        cursor: pointer
+    .req-button
+      margin: 0
+
+  // ------------hero-----------------------
+  .hero
+    flex-direction: row
+    width: 100%
+    overflow-x: hidden
+    .hero-text
+      width: 35%
+      text-align: left
+      padding-left: 15px
+      h1
+        font-size: 60px
+      p
+        font-size: 20px
+      .req-button
+        position: relative
+        right: 20px
+    .hero-image
+      width: 46%
+      height: 670px
+      overflow: visible
+
+  // -----------------middle section--------------
+  .features
+    padding: 50px 135px
+  .heading
+    width: 50%
+    text-align: left
+    padding: 50px 0
+  .arts
+    display: flex
+    justify-content: space-between
+    article
+      text-align: left
+      flex-basis: calc(100vw/5.2)
+
+  // --------------- lower section -------------------
+  .lower
+    .article-image
+      width: 270px
+      height: 200px
+    .text-content
+      padding-top: 10px
+      margin-left: 10px
+  // .art_div
+  //   h2
+  //     text-align: left
+  //     position: relative
+  //     left: 130px
+  // .posts
+  //   position: relative
+  //   width: 85%
+  //   margin: auto
+  //   display: flex
+  //   .post
+  //     .post-image
+  //       height: 200px
+
+  // -------------- footer --------------
+  footer
+    display: flex
+    width: 100%
+    justify-content: space-evenly
+    align-items: baseline
+    .pt
+      flex-basis: 300px
+    nav
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      div
+        display: flex
+        flex-direction: column
+        p
+          text-align: left
+          display: block
+          margin: 10px 0
